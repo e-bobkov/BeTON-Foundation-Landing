@@ -1,0 +1,265 @@
+:root {
+  --main-color-text: #12172c;
+  --btn-language: #F0F4F8;
+  --bg-btn: #07acff;
+  --text-btn: #fff;
+  --first-section: #E4E8EC;
+  --second-section: #D8DCDF;
+  --third-section: #C0C3C6;
+  --fourth-section: #A8ABAE;
+}
+
+*, ::after, ::before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-family: 'Inter', sans-serif;
+  color: var(--main-color-text);
+}
+
+body {
+  background-color: var(--text-btn);
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.header__block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 28px 0;
+}
+
+.btn__language {
+  background-color: var(--btn-language);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+}
+
+.nema__language {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.first__section {
+  background-color: var(--first-section);
+  border-radius: 36px;
+  -webkit-border-radius: 36px;
+  -moz-border-radius: 36px;
+  padding: 101px 72px 200px 160px;
+  display: flex;
+  gap: 90px;
+}
+
+.slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.slider-images {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  background-color: var(--text-btn);
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+}
+
+.slide {
+  width: 400px;
+  display: none;
+}
+
+.slide.active {
+  width: 400px;
+  display: block;
+  height: 400px;
+}
+
+.arrow {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 10px;
+}
+
+.thumbnails {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 18px;
+}
+
+.thumbnail {
+  width: 64px;
+  height: 64px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  background-color: var(--text-btn);
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+}
+
+.thumbnail.active {
+  opacity: 1;
+  border: 1px solid var(--main-color-text);
+
+}
+
+.title {
+  font-size: 45px;
+  font-weight: 600;
+  padding-bottom: 34px;
+  line-height: 45px;
+}
+
+.title span {
+  background: linear-gradient(91deg, #07acff, #0af .01%, #eb73ff 47.4%, #1de6ff);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.first__section-text {
+  font-size: 24px;
+  font-weight: 400;
+  padding-bottom: 48px;
+  line-height: 29px;
+}
+
+.btn {
+  background-color: var(--bg-btn);
+  color: var(--text-btn);
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 17px;
+  padding: 22px 31px;
+  border-radius: 46px;
+  -webkit-border-radius: 46px;
+  -moz-border-radius: 46px;
+  display: inline-block;
+}
+
+.btn:hover {
+  border: 1px solid var(--bg-btn);
+  background-color: var(--text-btn);
+  color: var(--bg-btn);
+}
+
+.section {
+  border-radius: 36px;
+  -webkit-border-radius: 36px;
+  -moz-border-radius: 36px;
+  display: flex;
+  gap: 40px;
+  position: relative;
+}
+
+.second {
+  background-color: var(--second-section);
+  padding: 3rem 2rem 6rem 6rem;
+  top: -70px;
+}
+
+.third {
+  background-color: var(--third-section);
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: 3rem 2rem 6rem 6rem;
+  top: -130px;
+}
+
+.fourth {
+  background-color: var(--fourth-section);
+  padding: 3rem 2rem 6rem 6rem;
+  top: -200px;
+}
+
+.section__img img {
+  width: 100%;
+}
+
+
+.section__img {
+  width: 100%;
+}
+
+.section__content {
+  width: 
+}
+
+.section__title {
+  line-height: 60px;
+}
+
+.section__text {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 35px;
+}
+
+.footer__block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  top: -110px;
+  
+}
+
+.links {
+  display: flex;
+  gap: 50px;
+}
+
+.link {
+  color: var(--main-color-text);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.link:hover {
+  color: var(--bg-btn);
+}
+
+.link__text {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.link__text p {
+    font-size: 16px;
+  font-weight: 400;
+}
